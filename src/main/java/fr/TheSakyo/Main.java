@@ -34,7 +34,7 @@ public class Main {
         if(hourOfDay >= 0 && hourOfDay <= 23) {
 
             // Si le chien aboie et que l'heure est avant 8h ou avant 22h, on peut se réveiller
-            if(barking == hourOfDay < 8 || hourOfDay > 22) { return true; }
+            if(barking && hourOfDay < 8 || hourOfDay > 22) { return true; }
         }
 
         return false; // On retourne faux (c'est-à-dire, on se réveille pas)
